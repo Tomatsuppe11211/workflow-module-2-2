@@ -1,4 +1,4 @@
-import { describe, expect, it, beforeEach, afterEach } from "vitest";
+import { describe, expect, it, beforeEach, afterEach, beforeAll, afterAll } from "vitest";
 
 describe("setting up two simle tests", () => {
   beforeEach(() => {
@@ -7,6 +7,14 @@ describe("setting up two simle tests", () => {
 
   afterEach(() => {
     console.log('Testing finished')
+  })
+
+  beforeAll(() => {
+    console.log('mark befor all tests')
+  })
+
+  afterAll(() => {
+    console.log('mark after all test')
   })
   
     it("Dummy test 1", () => {
