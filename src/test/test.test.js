@@ -1,0 +1,21 @@
+import { describe, expect, it, beforeEach, afterEach } from "vitest";
+
+describe("setting up two simle tests", () => {
+  beforeEach(() => {
+    console.log('preparing for testing')
+  })
+
+  afterEach(() => {
+    console.log('Testing finished')
+  })
+  
+    it("Dummy test 1", () => {
+    expect(1 + 1).toEqual(2);
+  });
+
+  it("Dummy test 2", () => {
+    expect(2 + 2).toEqual(4);
+  });
+});
+
+//test successfull :)
