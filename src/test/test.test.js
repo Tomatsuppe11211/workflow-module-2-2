@@ -1,23 +1,31 @@
-import { describe, expect, it, beforeEach, afterEach, beforeAll, afterAll } from "vitest";
+import {
+  describe,
+  expect,
+  it,
+  beforeEach,
+  afterEach,
+  beforeAll,
+  afterAll,
+} from "vitest";
 
 describe("setting up two simle tests", () => {
   beforeEach(() => {
-    console.log('preparing for testing')
-  })
+    console.log("preparing for testing");
+  });
 
   afterEach(() => {
-    console.log('Testing finished')
-  })
+    console.log("Testing finished");
+  });
 
   beforeAll(() => {
-    console.log('mark befor all tests')
-  })
+    console.log("mark befor all tests");
+  });
 
   afterAll(() => {
-    console.log('mark after all test')
-  })
-  
-    it("Dummy test 1", () => {
+    console.log("mark after all test");
+  });
+
+  it("Dummy test 1", () => {
     expect(1 + 1).toEqual(2);
   });
 
@@ -26,4 +34,9 @@ describe("setting up two simle tests", () => {
   });
 });
 
-//test successfull :)
+//Dummy test successfull :)
+
+//using local storage without mocking
+localStorage.setItem("testKey", "123");
+expect(localStorage.getItem("testKey")).toBe("123");
+//returns that localStorage is not defined.
