@@ -1,3 +1,13 @@
+//Mocking the localSturage manually
+
+const storage = {}
+
+global.localStorage = {
+  setItem: (key, value) => (storage[key] = value),
+  getItem: (key) => (storage[key])
+}
+//Results after mocking: test pass
+
 import {
   describe,
   expect,
