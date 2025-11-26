@@ -12,7 +12,9 @@ This is the lesson task from the workflow module 2.2
 - js
 - test.js
 - prettier
+- vite
 - vitest
+- jsdom
 
 ## .env
 

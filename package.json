@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/Tomatsuppe11211/workflow-module-2-2#readme",
   "devDependencies": {
+    "@vitest/browser": "^4.0.14",
+    "jsdom": "^27.2.0",
     "prettier": "^3.6.2",
     "vitest": "^4.0.14"
+  },
+  "dependencies": {
+    "vite": "^7.2.4"
   }
 }
